@@ -1,0 +1,7 @@
+- name: Deploy
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: Importing Role
+      import_role:
+        name: platform_deployment_community
